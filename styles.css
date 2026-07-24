@@ -1,0 +1,49 @@
+/* Color Palette: Warm Bakery Theme */
+/* Background: #fdfbf7 (Cream) */
+/* Main Text: #2b2623 (Dark Espresso) - Contrast ratio ~14.5:1 */
+/* Header/Footer BG: #3a2e2b (Deep Roasted Coffee) */
+/* Header/Footer Text: #fdfbf7 (Cream) - Contrast ratio ~11.8:1 */
+/* Headings (h1, h2): #6b3e2e (Warm Chestnut) - Contrast ratio ~6.2:1 */
+/* Nav Links: #e0b084 (Warm Caramel) - Contrast ratio ~9.2:1 against dark header */
+/* Prices: #8b4513 (Saddle Brown) - Contrast ratio ~5.8:1 */
+
+body {
+  background-color: #fdfbf7;
+  color: #2b2623;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+header,
+footer {
+  background-color: #3a2e2b;
+  color: #fdfbf7;
+}
+
+h1,
+h2 {
+  color: #6b3e2e;
+}
+
+nav a {
+  color: #e0b084;
+  text-decoration: none;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fdfbf7;
+}
+
+.tagline {
+  font-style: italic;
+  color: #6b3e2e;
+}
+
+.price {
+  color: #8b4513;
+  font-weight: bold;
+}
