@@ -30,10 +30,136 @@
       <div class="container">
         <h1>Pre-Order Your Pastries</h1>
         <p>
-          Our online pre-order form is coming soon! Soon you'll be able to
-          reserve your favorite loaves and treats online for easy morning
+          Reserve your favorite loaves and treats online for easy morning
           pickup.
         </p>
+
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Who is picking up</legend>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="field"
+                placeholder="Jane Doe"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="field"
+                placeholder="jane@example.com"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Pickup day</legend>
+            <div class="form-group">
+              <span class="label-text">Select Day</span>
+              <label for="day-saturday" class="choice">
+                <input
+                  type="radio"
+                  id="day-saturday"
+                  name="pickup_day"
+                  value="saturday"
+                  checked
+                />
+                Saturday
+              </label>
+              <label for="day-sunday" class="choice">
+                <input
+                  type="radio"
+                  id="day-sunday"
+                  name="pickup_day"
+                  value="sunday"
+                />
+                Sunday
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="pickup-time">Pickup Time</label>
+              <select
+                id="pickup-time"
+                name="pickup_time"
+                class="field"
+                required
+              >
+                <option value="">-- Select a time --</option>
+                <option value="08:00">8:00 AM</option>
+                <option value="09:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your order</legend>
+            <div class="form-group">
+              <span class="label-text">Select Items</span>
+              <label for="item-sourdough" class="choice">
+                <input
+                  type="checkbox"
+                  id="item-sourdough"
+                  name="order_item"
+                  value="sourdough"
+                />
+                Traditional Sourdough ($6.50)
+              </label>
+              <label for="item-baguette" class="choice">
+                <input
+                  type="checkbox"
+                  id="item-baguette"
+                  name="order_item"
+                  value="baguette"
+                />
+                Baguette Tradition ($3.00)
+              </label>
+              <label for="item-croissant" class="choice">
+                <input
+                  type="checkbox"
+                  id="item-croissant"
+                  name="order_item"
+                  value="croissant"
+                />
+                Butter Croissant ($3.50)
+              </label>
+              <label for="item-chocolat" class="choice">
+                <input
+                  type="checkbox"
+                  id="item-chocolat"
+                  name="order_item"
+                  value="pain-au-chocolat"
+                />
+                Pain au Chocolat ($4.00)
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Special Notes</label>
+              <textarea
+                id="notes"
+                name="notes"
+                class="field"
+                rows="4"
+                placeholder="Any special requests or packaging needs?"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit">Submit Pre-Order</button>
+        </form>
       </div>
     </main>
 
